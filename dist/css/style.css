@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+:root {
+    --primary: #091b18;
+    --secondary: #08723d;
+    --light: #10201d;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+}
+
+.navbar{
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: var(--primary);
+    
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+}
+
+.link a{
+    color: var(--secondary);
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+/* -------- */
+/* showcase */
+/* -------- */
+
+.showcase {
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+    min-height: 55vh;
+}
+
+.showcase img {
+    width: 27em;
+    height: 19em;
+    margin: 4em;
+
+}
+
+.bio {
+    min-height: 17em;
+    width: 27em;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px #446b3d;
+    margin: 4em;
+    background-color: var(--secondary);
+}
+
+.bio h2 {
+    margin: 1em;
+    text-align: center;
+}
+
+.bio p {
+    margin: 0 1.5em;
+}
+
+.bio-text {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+/* ----- */
+/* About */
+/* ----- */
+
+.about {
+    background-color: var(--primary);
+    color: var(--secondary);
+    min-height: 50vh;
+}
+
+.about h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* --------- */
+/* languages */
+/* --------- */
+.languages {
+    background-color: var(--light);
+    color: var(--secondary);
+    min-height: 30em;
+    
+}
+
+.languages h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* -------- */
+/* Projects */
+/* -------- */
+.projects {
+    background-color: var(--primary);
+    color: var(--secondary);
+    min-height: 30em;
+    
+    
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects {
+    padding: 2rem;
+}
+
+.projects h2 {
+    padding-bottom: 2rem;
+}
+
+.projects-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.project {
+    width: 19em;
+}
+
+.project img {
+    width: 19em;
+}
+
+
+/* contact */
+.contact {
+    background-color: var(--light);
+    padding-top: 2rem;
+    min-height: 40em;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    color: var(--secondary);
+    padding-bottom: 2rem;
+    
+  }
+  
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px #446b3d;
+    background-color: var(--secondary);
+  }
+  
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-field {
+    width: 97%;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary);
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  .input-field {
+      background-color: #2e7953;
+  }
+  
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2e7953;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #105031;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+  }
+  /* Contacts section ends */
+  
+
+
+  /* footer */
+.footer {
+    background-color: var(--primary);
+    padding: 3rem 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--secondary);
+    
+}
+
+.footer ul {
+    list-style-type: none;
+    /* padding: 2em; */
+}
+
+.footer li {
+    font-size: 1.05em;
+    margin: .2em;
+}
+
+.footer .social a {
+    margin: 0 10px;
+    color: var(--secondary);
+}
+
+.footer h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: .8em ;
+    color: var(--secondary);
+}
+
+.footer p {
+    color: var(--secondary);
+}
