@@ -270,6 +270,24 @@
   border: 2px solid var(--primary);
   cursor: pointer;
 }
+.submit-btn2 {
+  width: 20%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: 0.3s;
+}
+
+.submit-btn2:hover {
+  background-color: #105031;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+}
+
 /* Contacts section ends */
 
 /* footer */
